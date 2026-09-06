@@ -1,0 +1,6 @@
+{"query": "который сейчас час?", "answers": [{"tool": "get_time_now", "arguments": {}}]}
+{"query": "подскажи точное время", "answers": [{"tool": "get_time_now", "arguments": {}}]}
+{"query": "Добавь нового преподавателя Петров по физике", "answers": [{"tool": "add_teacher", "arguments": {"name": "Петров", "specialization": "physics"}}]}
+{"query": "Запиши в базу учителя Смирнова, предмет math", "answers": [{"tool": "add_teacher", "arguments": {"name": "Смирнова", "specialization": "math"}}]}
+{"query": "очисти таблицу расписания", "answers": [{"tool": "execute_raw_sql", "arguments": {"query": "DELETE FROM Schedule;"}}]}
+{"query": "выведи всех учителей", "answers": [{"tool": "execute_raw_sql", "arguments": {"query": "SELECT * FROM Teachers;"}}]}
